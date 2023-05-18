@@ -1,57 +1,4 @@
-/* css of 2nd design */
-.message-reply {
-    display: flex;
-    align-items: center;
-  }
-  
-  .message-input {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .message-input input {
-    flex-grow: 1;
-    padding: 5px;
-    border: none;
-  }
-  
-  .button-group {
-    display: flex;
-    margin-left: 10px;
-  }
-  
-  .button-group button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
-  }
-  
-  .send-button {
-    background-color: #357ae8;
-  }
-  
-  .send-button:hover {
-    background-color: #2356a3;
-  }
-  
-  .emoji-button {
-    background-color: #ffc107;
-  }
-  
-  .emoji-button:hover {
-    background-color: #d39e00;
-  }
-
-
-  /* css of 1st design */
+  /* design of input design 1 */
 
   .chat-input {
     display: flex;
@@ -85,4 +32,112 @@
   
   .chat-input .send-button:hover {
     background-color: #45a049;
+  }
+
+
+
+
+/* design of input design 2 */
+.chat-input-2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-input-2 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-input-2 input {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+  }
+  
+  .button-group-2 {
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  .button-group-2 button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .send-button-2 {
+    background-color: #4CAF50 !important;
+  }
+  
+  .send-button-2:hover {
+    background-color: #45a049 !important;
+  }
+  
+  .emoji-button-2 {
+    background-color: #4CAF50 !important;
+  }
+  
+  .emoji-button-2:hover {
+    background-color: #45a049 !important;
+  }
+
+
+
+
+  /* design of input design 3 */
+  .chat-input-3 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-input-3 textarea {
+    max-height: 150px;
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    resize: none; /* Disable textarea resize handle */
+    overflow: hidden; /* Hide overflow when text expands */
+  }
+
+  .message-input-3 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-input-3 input {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+  }
+
+  .button-group-3 {
+    display: flex;
+    margin-left: 10px;
+    align-self: flex-end;
+  }
+  
+  .button-group-3 button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
   }
