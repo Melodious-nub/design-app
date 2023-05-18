@@ -1,16 +1,1 @@
-<!-- design 1st -->
-<div class="chat-input p-3">
-    <textarea placeholder="Type your message..." [(ngModel)]="message" (input)="adjustTextAreaHeight($event.target)"></textarea>
-    <button class="send-button" (click)="sendMessage()">Send</button>
-</div>
-
-<!-- design 2nd -->
-<div class="message-reply p-3">
-  <div class="message-input">
-    <input type="text" placeholder="Reply..." [(ngModel)]="message" (input)="adjustTextAreaHeight($event.target)">
-    <div class="button-group">
-      <button class="emoji-button">😊</button>
-      <button class="send-button">Send</button>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>

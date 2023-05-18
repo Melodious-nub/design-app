@@ -7,13 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { InputsComponent } from './components/inputs/inputs.component';
+import { AppRoutingModule } from './app-routing.modules';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputsComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
