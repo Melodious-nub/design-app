@@ -1,3 +1,4 @@
+/* nav tab & pill design */
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -20,4 +21,42 @@
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
+  }
+
+
+  /* for hoverable tabs */
+  #mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #inputs {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #tabs {
+    top: 80px;
+    background-color: #2196F3;
+  }
+  
+  #buttons {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+  #modals {
+    top: 200px;
+    background-color: #555
   }

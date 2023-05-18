@@ -9,11 +9,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { InputsComponent } from './components/inputs/inputs.component';
 import { AppRoutingModule } from './app-routing.modules';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { ModalsComponent } from './components/modals/modals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputsComponent
+    InputsComponent,
+    TabsComponent,
+    ButtonsComponent,
+    ModalsComponent
   ],
   imports: [
     BrowserModule,
