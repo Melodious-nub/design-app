@@ -4,12 +4,16 @@
     display: flex;
     align-items: center;
   }
+
+  .brder {
+    border: 1px solid #ccc;
+  }
   
   .chat-input textarea {
-    max-height: 150px;
+    overflow-y: auto !important;
+    max-height: 100px;
     flex-grow: 1;
     padding: 10px;
-    border: none;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,6 +40,8 @@
 
 
 
+/* -------------------------- end design-1 ------------------------------------------- */
+
 
 /* design of input design 2 */
 .chat-input-2 {
@@ -44,23 +50,25 @@
   }
   
   .message-input-2 {
-    display: flex;
-    align-items: center;
     flex-grow: 1;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  .message-input-2 input {
-    flex-grow: 1;
+  .message-input-2 textarea {
+    width: 100%;
+    max-height: 100px;
     padding: 5px;
     border: none;
+    outline: none;
+    font-size: 12px;
   }
   
   .button-group-2 {
     display: flex;
-    margin-left: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
   }
   
   .button-group-2 button {
@@ -90,49 +98,58 @@
   }
 
 
+/* -------------------------- end design-2 ------------------------------------------- */
 
 
-  /* design of input design 3 */
-  .chat-input-3 {
+  /* design-3 */
+  .msger-inputarea {
     display: flex;
     align-items: center;
+    padding: 10px;
+    border-top: var(--border);
+    background: #eee;
   }
-  
-  .chat-input-3 textarea {
-    max-height: 150px;
-    flex-grow: 1;
+  .msger-inputarea * {
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
     font-size: 12px;
-    resize: none; /* Disable textarea resize handle */
-    overflow: hidden; /* Hide overflow when text expands */
+  }
+  .msger-input {
+    flex: 1;
+    background: #ddd;
+    outline: none;
+  }
+  .msger-send-btn {
+    margin-left: 10px;
+    background: rgb(0, 196, 65);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.23s;
+  }
+  .msger-send-btn:hover {
+    background: rgb(0, 180, 50);
   }
 
-  .message-input-3 {
+  .msger-input {
+    width: 100%;
+  }
+  
+  .msger-input:focus {
+    box-shadow: 0 0 0 3px var(--secondary-color);
+  }
+  
+  .msger-input:hover {
+    background-color: var(--hover-color);
+  }
+
+  .button-group {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
   
-  .message-input-3 input {
-    flex-grow: 1;
-    padding: 5px;
-    border: none;
-  }
-
-  .button-group-3 {
-    display: flex;
-    margin-left: 10px;
-    align-self: flex-end;
-  }
-  
-  .button-group-3 button {
+  .button-group button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -141,53 +158,22 @@
     margin-left: 5px;
     cursor: pointer;
   }
-
-  /* input design 4 */
-  .chat-input-4 {
-    display: grid;
-    align-items: center;
+  
+  .send-button {
+    background-color: #4CAF50 !important;
   }
   
-  .chat-input-4 textarea {
-    max-height: 150px;
-    flex-grow: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 12px;
-    resize: none; /* Disable textarea resize handle */
-    overflow: hidden; /* Hide overflow when text expands */
-  }
-
-  .message-input-4 {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .send-button:hover {
+    background-color: #45a049 !important;
   }
   
-  .message-input-4 input {
-    flex-grow: 1;
-    padding: 5px;
-    border: none;
-  }
-
-  .button-group-4 {
-    display: flex;
-    margin-left: 10px;
-    align-self: flex-end;
+  .emoji-button {
+    background-color: #4CAF50 !important;
   }
   
-  .button-group-4 button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
+  .emoji-button:hover {
+    background-color: #45a049 !important;
   }
+
+
+/* -------------------------- end design-3 ------------------------------------------- */
