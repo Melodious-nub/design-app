@@ -141,3 +141,53 @@
     margin-left: 5px;
     cursor: pointer;
   }
+
+  /* input design 4 */
+  .chat-input-4 {
+    display: grid;
+    align-items: center;
+  }
+  
+  .chat-input-4 textarea {
+    max-height: 150px;
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    resize: none; /* Disable textarea resize handle */
+    overflow: hidden; /* Hide overflow when text expands */
+  }
+
+  .message-input-4 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-input-4 input {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+  }
+
+  .button-group-4 {
+    display: flex;
+    margin-left: 10px;
+    align-self: flex-end;
+  }
+  
+  .button-group-4 button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
