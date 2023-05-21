@@ -116,13 +116,10 @@
     font-size: 12px;
   }
   .msger-input {
+    width: 100%;
     flex: 1;
     background: #ddd;
     outline: none;
-  }
-
-  .msger-input {
-    width: 100%;
   }
   
   .msger-input:focus {
