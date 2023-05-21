@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-inputs',
@@ -29,4 +29,43 @@ export class InputsComponent {
   onFileSelected(e:any) {
     
   }
+  
+  // for audio design and output
+  @ViewChild('audioPlayer') audioPlayer: ElementRef;
+  audioPaused: boolean = true;
+  audioDuration: number = 0;
+  currentTime: number = 0;
+
+  ngAfterViewInit() {
+    this.audioPlayer.nativeElement.addEventListener('timeupdate', () => {
+      this.updateProgressBar();
+    });
+
+    this.audioPlayer.nativeElement.addEventListener('ended', () => {
+      this.audioPaused = true;
+    });
+
+    this.audioPlayer.nativeElement.addEventListener('durationchange', () => {
+      this.audioDuration = this.audioPlayer.nativeElement.duration;
+    });
+  }
+
+  togglePlayPause() {
+    if (this.audioPaused) {
+      this.audioPlayer.nativeElement.play();
+    } else {
+      this.audioPlayer.nativeElement.pause();
+    }
+    this.audioPaused = !this.audioPaused;
+  }
+
+  updateProgressBar() {
+    this.currentTime = this.audioPlayer.nativeElement.currentTime;
+  }
+
+  changeCurrentTime() {
+    this.audioPlayer.nativeElement.currentTime = this.currentTime;
+  }
+
+  
 }
