@@ -99,14 +99,32 @@
   #progressBar {
     width: 100px;
     padding-top: 3px;
-    color: #862484;
+    cursor: pointer;
   }
 
   .media-player {
-    padding: 14px 8px 0 0;
+    padding: 15px 8px 0 0;
     border: 1px solid #862484;
-    border-radius: 3px;
+    border-radius: 12px;
   }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 15px;
+    background: #ddd;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #862484;
+    margin-top: 0px;
+}
 
 
 /* -------------------------- end design-2 ------------------------------------------- */
