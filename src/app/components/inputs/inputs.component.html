@@ -2,7 +2,7 @@
 <h3 class="text-center pt-2">Input group 1</h3>
 <div class="brder m-3">
   <div class="chat-input p-3">
-      <textarea placeholder="Type your message..." [(ngModel)]="message" (input)="adjustTextAreaHeight($event.target)"></textarea>
+      <textarea placeholder="Type your message..." [(ngModel)]="message" (input)="adjustTextAreaHeight($event.target)" (keyup)="onKeyup($event)"></textarea>
       <button type="button" class="send-button">😊</button>
       <button type="button" class="send-button" (click)="sendMessage()">Send</button>
   </div>

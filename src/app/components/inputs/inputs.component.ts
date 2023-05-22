@@ -67,5 +67,12 @@ export class InputsComponent {
     this.audioPlayer.nativeElement.currentTime = this.currentTime;
   }
 
+  onKeyup(event: KeyboardEvent) {
+    const textareaValue: string = (event.target as HTMLTextAreaElement).value;
+    if (textareaValue.includes('@')) {
+      alert('You pressed @');
+    }
+  }
+
   
 }
