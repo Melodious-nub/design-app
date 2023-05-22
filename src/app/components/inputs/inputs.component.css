@@ -116,15 +116,15 @@
     margin-bottom: 5px;
 }
 
-input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: #862484;
-    margin-top: 0px;
-}
+  input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: #862484;
+      margin-top: 0px;
+  }
 
 
 /* -------------------------- end design-2 ------------------------------------------- */
