@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.modules';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { ModalsComponent } from './components/modals/modals.component';
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ModalsComponent } from './components/modals/modals.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
