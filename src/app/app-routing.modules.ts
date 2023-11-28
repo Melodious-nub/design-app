@@ -7,7 +7,7 @@ import { ModalsComponent } from './components/modals/modals.component';
 
 const routes: Routes = [
     { path:'', component: InputsComponent, pathMatch: 'full'},
-    { path:'tabs', component: TabsComponent},
+    { path:'excel', component: TabsComponent},
     { path:'buttons', component: ButtonsComponent},
     { path:'modals', component: ModalsComponent},
   ];

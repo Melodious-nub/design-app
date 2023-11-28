@@ -1,1 +1,20 @@
-<p>tabs works!</p>
+<form class="container" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input class="mt-2" type="file" (change)="onFileChange($event)" />
+  
+    <div formArrayName="users">
+      <div class="mt-2" *ngFor="let userGroup of usersFormArray.controls; let i = index" [formGroupName]="i">
+        <label class="mt-2 me-3">
+          Name:
+          <input type="text" formControlName="name">
+        </label>
+        <label class="mt-2 me-3">
+          Email:
+          <input type="email" formControlName="email">
+        </label>
+      </div>
+    </div>
+  
+    <button class="my-4" type="submit">Submit</button>
+</form>
+  
+  
